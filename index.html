@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Capital Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+    font-family:'Inter',sans-serif;
+    background:#030303;
+    color:#eaeaea;
+    overflow-x:hidden;
+}
+
+/* Subtle moving grid */
+body::before{
+    content:"";
+    position:fixed;
+    width:200%;
+    height:200%;
+    background-image:
+        linear-gradient(rgba(212,175,55,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,175,55,.04) 1px, transparent 1px);
+    background-size:80px 80px;
+    animation:moveGrid 90s linear infinite;
+    z-index:-1;
+}
+@keyframes moveGrid{
+    from{transform:translate(0,0)}
+    to{transform:translate(-80px,-80px)}
+}
+
+section{
+    padding:140px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    font-size:3.2rem;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#ffffff;
+}
+
+h2{
+    font-size:1.8rem;
+    margin-bottom:30px;
+    color:#d4af37;
+    font-weight:500;
+}
+
+p{
+    color:#9a9a9a;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    animation:fade 2s ease forwards;
+}
+
+@keyframes fade{
+    from{opacity:0;transform:translateY(30px)}
+    to{opacity:1;transform:translateY(0)}
+}
+
+.glass{
+    background:rgba(255,255,255,0.02);
+    border:1px solid rgba(212,175,55,0.15);
+    padding:50px;
+    border-radius:8px;
+    margin-top:40px;
+    transition:.4s ease;
+}
+
+.glass:hover{
+    border-color:rgba(212,175,55,0.4);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:12px 28px;
+    border:1px solid #d4af37;
+    border-radius:2px;
+    color:#d4af37;
+    text-decoration:none;
+    font-size:.9rem;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+.floating{
+    position:fixed;
+    bottom:40px;
+    right:40px;
+    background:#111;
+    color:#d4af37;
+    padding:16px 28px;
+    border:1px solid rgba(212,175,55,.3);
+    text-decoration:none;
+    font-size:.85rem;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+.floating:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+footer{
+    text-align:center;
+    padding:80px 0;
+    color:#555;
+    font-size:.8rem;
+    letter-spacing:1px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Apex Capital Executive</h1>
+    <p>
+        Private capital architecture.  
+        Strategic execution.  
+        Institutional discipline.
+    </p>
+</section>
+
+<section>
+    <h2>About</h2>
+    <div class="glass">
+        <p>
+            Apex Capital Executive operates as a discreet capital office 
+            focused on advanced financial infrastructure, strategic allocation,
+            and engineered execution systems.
+            Our mandate centers on long-term capital preservation,
+            asymmetric positioning, and disciplined deployment.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Selective Appointments</h2>
+    <div class="glass">
+        <p>
+            We engage selectively with individuals demonstrating
+            exceptional analytical capacity, discretion,
+            and strategic clarity.
+        </p>
+        <a href="mailto:careers@apexcapitalexchange.com" class="btn">
+            Request Consideration
+        </a>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="glass">
+        <p>Email: contact@apexcapitalexchange.com</p>
+        <p>United States</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Apex Capital Executive  
+    Confidential — Private Office  
+    apexcapitalexchange.com
+</footer>
+
+<a href="https://apex-capital-exc.lovable.app" target="_blank" class="floating">
+    Private Access →
+</a>
+
+</body>
+</html>
